@@ -1,0 +1,17 @@
+{
+  "name": "giard-design",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "concurrently \"npm run watch-css\" \"npm run serve\"",
+    "watch-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "serve": "browser-sync start --server --files 'dist/*.css' '*.html'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.0",
+    "tailwindcss": "^3.3.3"
+  }
+}
