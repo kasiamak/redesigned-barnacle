@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="overflow-x-hidden">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -69,7 +69,7 @@
                         />
                     </svg>
                 </div>
-                <div class="flex items-center ml-auto mr-8 md:hidden">
+                <div class="flex items-center ml-auto mr-4 md:hidden">
                     <button
                         class="relative z-10 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none"
                         aria-label="Toggle Navigation"
@@ -82,7 +82,7 @@
                             stroke-width="2"
                             stroke-linecap="round"
                             viewBox="0 0 12 12"
-                            class="h-8 w-8 overflow-visible stroke-slate-700"
+                            class="h-6 w-6 overflow-visible stroke-slate-700"
                         >
                             <path
                                 d="M0 1H14M0 7H14M0 13H14"
@@ -100,23 +100,23 @@
                     class="fixed hidden left-0 top-0 justify-center items-center w-screen h-screen z-50"
                 >
                     <ul
-                        class="flex flex-col text-center h-full w-full p-4 gap-4 grow leading-[21px] tracking-[-0.14px] items-center bg-white z-50"
+                        class="flex flex-col text-center h-full w-full p-4 gap-4 grow leading-[21px] tracking-[-0.14px] items-center  bg-white z-50"
                     >
                         <li>
                             <button
-                                class="relative gap-4 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none z-[99]"
+                                class="relative gap-4 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none z-[99] text-2xl text-green-main italic"
                                 aria-label="Toggle Navigation"
                                 type="button"
                                 id="closeHamburger"
                             >
-                                Close
+                                Zamknij
                                 <svg
                                     aria-hidden="true"
                                     fill="none"
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     viewBox="0 0 12 12"
-                                    class="-left-8 top-[6px] h-4 w-4 overflow-visible stroke-slate-700 absolute"
+                                    class="-left-16 top-2 h-4 w-4 overflow-visible stroke-slate-700 absolute"
                                 >
                                     <path
                                         d="M2 2L12 12M12 2L2 12"
@@ -129,7 +129,7 @@
                         <li>
                             <a
                                 href="#oferta"
-                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main"
+                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main text-3xl "
                                 >Oferta</a
                             >
                         </li>
@@ -137,21 +137,21 @@
                         <li>
                             <a
                                 href="#ofirmie"
-                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main"
+                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main text-3xl "
                                 >O firmie</a
                             >
                         </li>
                         <li>
                             <a
                                 href="#realizacje"
-                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main"
+                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main text-3xl"
                                 >Realizacje</a
                             >
                         </li>
                         <li>
                             <a
                                 href="#kontakt"
-                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main"
+                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main text-3xl"
                                 >Kontakt</a
                             >
                         </li>
@@ -184,9 +184,9 @@
                 </div>
 
                 <ul
-                    class="gap-12 grow justify-end leading-[21px] tracking-[-0.14px] items-center hidden md:flex"
+                    class="gap-4 lg:gap-12 grow justify-end leading-[21px] tracking-[-0.14px] items-center hidden md:flex"
                 >
-                    <li>
+                    <li class="ml-12">
                         <button
                             id="dropdownDefaultButton"
                             class="inline-flex items-baseline gap-[5px] hover:border-b-[1px] hover:border-green-main hover:text-green-main"
@@ -245,7 +245,7 @@
                     <li>
                         <a
                             href="#ofirmie"
-                            class="hover:border-b-[1px] hover:border-green-main hover:text-green-main"
+                            class="hover:border-b-[1px] hover:border-green-main hover:text-green-main whitespace-nowrap"
                             >O firmie</a
                         >
                     </li>
@@ -263,7 +263,7 @@
                             >Kontakt</a
                         >
                     </li>
-                    <li class="relative">
+                    <li class="relative top-[5px]">
                         <svg
                             class="absolute pointer-events-none z-50"
                             xmlns="http://www.w3.org/2000/svg"
@@ -281,7 +281,7 @@
                         </svg>
                         <div class="flex gap-2">
                             <input
-                                class="pl-8 pb-2 appearance-none lg:opacity-0 hover:opacity-100 transition-opacity focus-visible:outline-none border-b border-input"
+                                class="pl-8 w-full pb-2 appearance-none lg:opacity-0 hover:opacity-100 transition-opacity focus-visible:outline-none border-b border-input"
                                 placeholder="Search"
                             />
                         </div>
@@ -293,7 +293,7 @@
             <div class="flex justify-center items-center flex-col">
                 <div class="max-w-lg m-8">
                     <h1
-                        class="scroll-m-20 text-6xl font-medium tracking-tight lg:text-5xl mb-11 font-monte leading-[70px] self-stretch"
+                        class="scroll-m-20 text-5xl  font-medium tracking-tight lg:text-5xl mb-11 font-monte leading-[70px] self-stretch"
                     >
                         Nowoczesna aranżacja Twojego ogrodu
                     </h1>
@@ -302,7 +302,7 @@
                         estetyka realizacji. Oferujemy kompleksowy zakres usług
                         z indywidualnym podejściem do każdego projektu.
                     </p>
-                    <div class="gap-9 flex font-normal">
+                    <div class="gap-4 lg:gap-9 flex font-normal flex-col lg:flex-row">
                         <button
                             class="px-6 py-3 bg-green-main text-grey-main rounded-full hover:bg-green-main/90 items-center"
                         >
@@ -377,23 +377,23 @@
         </section>
         <section
             id="oferta"
-            class="flex flex-col bg-grey-main lg:gap-24 py-16 lg:pt-32 lg:pb-40 items-center"
+            class="flex flex-col bg-grey-main lg:gap-0 py-8 sm:py-16 lg:pt-32 lg:pb-40 items-center"
         >
             <div class="flex justify-center items-center flex-grow flex-col">
                 <div class="max-w-[1262px] m-8">
                     <h3
-                        class="text-green-main text-xs tracking-[-0.12px] leading-[18px] mb-4"
+                        class="text-green-main text-xl lg:text-xs tracking-[-0.12px] leading-[18px] mb-4"
                     >
                         Oferta
                     </h3>
                     <h2
-                        class="scroll-m-20 text-6xl font-medium tracking-[-1.44px] leading-[115%] lg:text-5xl mb-11 font-monte self-stretch"
+                        class="scroll-m-20 text-5xl font-medium tracking-[-1.44px] leading-[115%] lg:text-5xl mb-11 font-monte self-stretch"
                     >
                         Działamy
                         <span class="italic font-sans">kompleksowo</span>
                     </h2>
                     <p
-                        class="leading-6 tracking-[-0.16px] mb-[72px] max-w-3xl self-stretch"
+                        class="leading-6 tracking-[-0.16px] sm:mb-[72px] max-w-3xl self-stretch"
                     >
                         Oferujemy kompletną obsługę inwestycji terenów
                         zielonych. Projektujemy nowoczesne ogrody przydomowe
@@ -404,7 +404,7 @@
                 </div>
             </div>
             <div
-                class="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-[1262px] m-8"
+                class="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-16 max-w-[1262px] m-8"
             >
                 <div
                     class="bg-white rounded-lg h-[370px] flex flex-col items-start py-12 px-10"
@@ -511,11 +511,11 @@
             ></div>
             <div class="flex justify-center items-center flex-col">
                 <div class="max-w-lg text-grey-main m-8">
-                    <h3 class="text-grey-main text-xs font-normal mb-4">
+                    <h3 class="text-grey-main text-xl lg:text-xs font-normal mb-4">
                         O firmie
                     </h3>
                     <h2
-                        class="scroll-m-20 text-grey-main text-6xl font-medium leading-[115%] tracking-[-1.44px] lg:text-5xl mb-11 font-monte"
+                        class="scroll-m-20 text-grey-main text-5xl font-medium leading-[115%] tracking-[-1.44px] lg:text-5xl mb-11 font-monte"
                     >
                         Tworzymy <br />
                         z <span class="italic font-sans">pasją</span>
@@ -531,7 +531,7 @@
                     </p>
                     <div class="gap-9 flex">
                         <button
-                            class="px-6 py-3 border text-grey-main border-grey-main rounded-full hover:text-green-main hover:bg-grey-main"
+                            class="px-6 py-3 border text-grey-main border-grey-main rounded-full hover:text-green-main hover:bg-grey-main w-full sm:w-auto"
                         >
                             Poznaj nas bliżej
                         </button>
@@ -541,19 +541,19 @@
         </section>
         <section
             id="realizacje"
-            class="bg-beige pt-[120px] relative max-h-[40rem] lg:max-h-[95rem] overflow-hidden"
+            class="bg-beige pt-4 sm:pt-[120px] relative max-h-[40rem] lg:max-h-[95rem] overflow-hidden"
         >
             <div
                 class="flex justify-center items-center flex-col max-w-[1262px]"
             >
-                <div class="max-w-lg">
+                <div class="max-w-lg m-8">
                     <h3
-                        class="text-xs text-green-main tracking-[-0.12px] leading-[18px] font-normal"
+                        class="text-xl lg:text-xs text-green-main tracking-[-0.12px] leading-[18px] font-normal mb-4 sm:mb-0"
                     >
                         Realizacje
                     </h3>
                     <h2
-                        class="scroll-m-20 text-6xl font-medium tracking-[1.44px] leading-[115%] lg:text-5xl mb-24 font-monte"
+                        class="scroll-m-20 text-5xl font-medium tracking-[1.44px] leading-[115%] lg:text-5xl  mb-8 sm:mb-24 font-monte"
                     >
                         Nasze
                         <span class="italic font-sans leading-[115%]"
@@ -654,7 +654,7 @@
         </section>
         <section
             id="kontakt"
-            class="flex justify-center items-center flex-col lg:py-[60px]"
+            class="flex justify-center items-center aliflex-col lg:py-[60px]"
         >
             <div
                 class="max-w-5xl bg-green-main p-8 sm:py-[120px] sm:px-[110px]"
@@ -667,11 +667,11 @@
                         <span class="italic font-medium">Instagramie</span>.
                     </h2>
                     <div class="flex gap-6 flex-col">
-                        <p class="text-white">
+                        <p class="text-grey-main">
                             Śledź nasze <br />najnowsze realizacje!
                         </p>
                         <button
-                            class="px-6 py-3 bg-white text-green-main rounded-full hover:bg-white/90"
+                            class="px-6 py-3 bg-grey-main text-green-main rounded-full hover:bg-white/90"
                         >
                             Instagram
                         </button>
@@ -683,7 +683,7 @@
             class="bg-black text-grey-main py-20 sm:px-64 justify-center flex flex-grow"
         >
             <div class="max-w-[1262px] flex flex-grow flex-col">
-                <div class="flex items-center gap-6 flex-col sm:flex-row">
+                <div class="flex items-center gap-6 flex-col lg:flex-row">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="115"
@@ -736,7 +736,7 @@
                             fill="#F5F0EC"
                         />
                     </svg>
-                    <span class="sm:ml-auto"
+                    <span class="lg:ml-auto"
                         >Daj znać, co możemy dla Ciebie zrobić!</span
                     >
                     <button
@@ -745,10 +745,10 @@
                         Skontaktuj się z nami
                     </button>
                 </div>
-                <hr class="my-16" />
-                <div class="flex flex-col sm:flex-row gap-12 sm:gap-0">
+                <hr class="my-16 mx-auto sm:mx-0 w-[80%] sm:w-full" />
+                <div class="flex flex-col sm:flex-row gap-6 sm:gap-0">
                     <ul
-                        class="flex gap-12 flex-col sm:flex-row items-center sm:items-start"
+                        class="flex gap-6 flex-col sm:flex-row items-center sm:items-start"
                     >
                         <li>Kontakt</li>
                         <li>Instagram</li>
@@ -758,18 +758,18 @@
                     <ul
                         class="flex sm:ml-auto gap-12 flex-col sm:flex-row items-center sm:items-start"
                     >
-                        <li>000-000-000</li>
-                        <li>giarddesign@kontakt.pl</li>
+                        <li class="hidden lg:flex">000-000-000</li>
+                        <li class="mb-6 sm:mb-0" >giarddesign@kontakt.pl</li>
                     </ul>
                 </div>
                 <div
-                    class="flex mt-32 flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0"
+                    class="flex sm:mt-32 flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0"
                 >
                     <span class="text-center sm:text-left"
                         >Prawa zastrzeżone © 2022</span
                     >
                     <div
-                        class="gap-4 flex sm:ml-auto flex-col sm:flex-row items-center sm:items-start"
+                        class="gap-4 flex sm:ml-auto  items-center sm:items-start mt-4 sm:mt-0"
                     >
                         <span class="sm:ml-auto">made by</span>
                         <svg

@@ -73,7 +73,6 @@ const hamburgerCloseButton = document.getElementById('closeHamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 const mobileNavItems = document.getElementsByClassName('mobile-nav-item');
 hamburgerButton.addEventListener('click', () => {
-    // alert('wtf')
     // Toggle the visibility of the mobile menu
     mobileMenu.classList.remove('hidden');
     mobileMenu.classList.add('flex');
