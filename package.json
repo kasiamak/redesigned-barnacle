@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "concurrently \"npm run watch-css\" \"npm run serve\"",
     "watch-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "serve": "browser-sync start --server --files 'dist/*.css' '*.html'"
+    "serve": "browser-sync start --server --files 'dist/*.css' 'src/*.html'"
   },
   "author": "",
   "license": "ISC",
