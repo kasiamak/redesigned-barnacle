@@ -12,9 +12,9 @@
             rel="stylesheet"
         />
     </head>
-    <body class="m">
+    <body class="overflow-x-hidden">
         <header class="flex gap-12 py-6 items-center justify-center">
-            <div class="flex flex-grow max-w-[1262px] mx-8 ">
+            <div class="flex flex-grow max-w-[1262px] mx-8">
                 <div class="flex items-center">
                     <svg
                         class="w-[287.5px] h-[100px] md:w-[115px] md:h-[20px]"
@@ -94,8 +94,96 @@
                         </svg>
                     </button>
                 </div>
+                <div
+                    id="mobileMenu"
+                    class="fixed hidden left-0 top-0 justify-center items-center w-screen h-screen z-50"
+                >
+                    <ul
+                        class="flex flex-col text-center h-full w-full p-4 gap-4 grow leading-[21px] tracking-[-0.14px] items-center bg-white z-50"
+                    >
+                        <li>
+                            <button
+                                class="relative gap-4 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none z-[99]"
+                                aria-label="Toggle Navigation"
+                                type="button"
+                                id="closeHamburger"
+                            >
+                                Close
+                                <svg
+                                    aria-hidden="true"
+                                    fill="none"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    viewBox="0 0 12 12"
+                                    class="-left-8 top-[6px] h-4 w-4 overflow-visible stroke-slate-700 absolute"
+                                >
+                                    <path
+                                        d="M2 2L12 12M12 2L2 12"
+                                        class="origin-center"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#oferta"
+                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main"
+                                >Oferta</a
+                                >
+                        </li>
+
+                        <li>
+                            <a
+                                href="#ofirmie"
+                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main"
+                                >O firmie</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#realizacje"
+                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main"
+                                >Realizacje</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#kontakt"
+                                class="mobile-nav-item hover:border-b-[1px] hover:border-green-main hover:text-green-main"
+                                >Kontakt</a
+                            >
+                        </li>
+                        <li class="flex justify-center">
+                            <div class="relative">
+                                <svg
+                                    class="absolute pointer-events-none z-50"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z"
+                                        fill="#111111"
+                                    />
+                                </svg>
+                                <div class="flex gap-2">
+                                    <input
+                                        class="pl-8 pb-2 appearance-none lg:opacity-0 hover:opacity-100 transition-opacity focus-visible:outline-none border-b border-input"
+                                        placeholder="Search"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
                 <ul
-                    class="gap-12 grow justify-end leading-[21px] tracking-[-0.14px] items-center  hidden md:flex"
+                    class="gap-12 grow justify-end leading-[21px] tracking-[-0.14px] items-center hidden md:flex"
                 >
                     <li>
                         <button
@@ -130,21 +218,21 @@
                             >
                                 <li>
                                     <a
-                                        href="#"
+                                        href="#oferta"
                                         class="block px-4 py-2 hover:bg-green-main hover:bg-opacity-10 hover:text-green-main"
                                         >Projektowanie ogrodów</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="#oferta"
                                         class="block px-4 py-2 hover:bg-green-main hover:bg-opacity-10 hover:text-green-main"
                                         >Nadzór wykonawczy</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="#oferta"
                                         class="block px-4 py-2 hover:bg-green-main hover:bg-opacity-10 hover:text-green-main"
                                         >Pielęgnacja ogrodów</a
                                     >
@@ -155,21 +243,21 @@
 
                     <li>
                         <a
-                            href=""
+                            href="#ofirmie"
                             class="hover:border-b-[1px] hover:border-green-main hover:text-green-main"
                             >O firmie</a
                         >
                     </li>
                     <li>
                         <a
-                            href=""
+                            href="#realizacje"
                             class="hover:border-b-[1px] hover:border-green-main hover:text-green-main"
                             >Realizacje</a
                         >
                     </li>
                     <li>
                         <a
-                            href=""
+                            href="#kontakt"
                             class="hover:border-b-[1px] hover:border-green-main hover:text-green-main"
                             >Kontakt</a
                         >
@@ -287,6 +375,7 @@
             </div>
         </section>
         <section
+            id="oferta"
             class="flex flex-col bg-grey-main lg:gap-24 py-16 lg:pt-32 lg:pb-40 items-center"
         >
             <div class="flex justify-center items-center flex-grow flex-col">
@@ -313,7 +402,9 @@
                     </p>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-[1262px] m-8">
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-[1262px] m-8"
+            >
                 <div
                     class="bg-white rounded-lg h-[370px] flex flex-col items-start py-12 px-10"
                 >
@@ -410,7 +501,7 @@
                 </div>
             </div>
         </section>
-        <section class="grid grid-cols-1 md:grid-cols-2 bg-green-main">
+        <section id="ofirmie" class="grid grid-cols-1 md:grid-cols-2 bg-green-main">
             <div
                 class="hidden md:flex lg:h-screen lg:max-h-screen overflow-hidden bg-firmie bg-top bg-cover"
             ></div>
@@ -445,7 +536,7 @@
             </div>
         </section>
         <section
-            id="designs-container"
+            id="realizacje"
             class="bg-beige pt-[120px] relative max-h-[40rem] lg:max-h-[95rem] overflow-hidden"
         >
             <div
@@ -557,9 +648,11 @@
                 </button>
             </div>
         </section>
-        <section class="flex justify-center items-center flex-col lg:py-[60px]">
-            <div class="max-w-5xl bg-green-main py-[120px] px-[110px]">
-                <div class="flex gap-16 shrink-0">
+        <section id="kontakt" class="flex justify-center items-center flex-col lg:py-[60px]">
+            <div
+                class="max-w-5xl bg-green-main p-8 sm:py-[120px] sm:px-[110px]"
+            >
+                <div class="flex gap-16 shrink-0 flex-col sm:flex-row">
                     <h2
                         class="text-grey-main text-[40px] leading-[48px] font-normal font-monte w-full"
                     >
@@ -580,10 +673,10 @@
             </div>
         </section>
         <footer
-            class="bg-black text-grey-main py-20 px-64 justify-center flex flex-grow"
+            class="bg-black text-grey-main py-20 sm:px-64 justify-center flex flex-grow"
         >
             <div class="max-w-[1262px] flex flex-grow flex-col">
-                <div class="flex items-center gap-6">
+                <div class="flex items-center gap-6 flex-col sm:flex-row">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="115"
@@ -636,7 +729,7 @@
                             fill="#F5F0EC"
                         />
                     </svg>
-                    <span class="ml-auto"
+                    <span class="sm:ml-auto"
                         >Daj znać, co możemy dla Ciebie zrobić!</span
                     >
                     <button
@@ -646,22 +739,32 @@
                     </button>
                 </div>
                 <hr class="my-16" />
-                <div class="flex">
-                    <ul class="flex gap-12">
+                <div class="flex flex-col sm:flex-row gap-12 sm:gap-0">
+                    <ul
+                        class="flex gap-12 flex-col sm:flex-row items-center sm:items-start"
+                    >
                         <li>Kontakt</li>
                         <li>Instagram</li>
                         <li>Facebook</li>
                         <li>LinkedIn</li>
                     </ul>
-                    <ul class="flex ml-auto gap-12">
+                    <ul
+                        class="flex sm:ml-auto gap-12 flex-col sm:flex-row items-center sm:items-start"
+                    >
                         <li>000-000-000</li>
                         <li>giarddesign@kontakt.pl</li>
                     </ul>
                 </div>
-                <div class="flex mt-32">
-                    <span>Prawa zastrzeżone © 2022</span>
-                    <div class="gap-4 flex ml-auto">
-                        <span class="ml-auto">made by</span>
+                <div
+                    class="flex mt-32 flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0"
+                >
+                    <span class="text-center sm:text-left"
+                        >Prawa zastrzeżone © 2022</span
+                    >
+                    <div
+                        class="gap-4 flex sm:ml-auto flex-col sm:flex-row items-center sm:items-start"
+                    >
+                        <span class="sm:ml-auto">made by</span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="113"
